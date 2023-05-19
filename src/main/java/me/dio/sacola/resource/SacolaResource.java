@@ -14,7 +14,7 @@ public class SacolaResource {
     private final SacolaService sacolaService;
 
     @PostMapping
-    public Item incluirItemNaSacola(ItemDto itemDto){
+    public Item incluirItemNaSacola(@RequestBody ItemDto itemDto){
         return sacolaService.incluirItemNaSacola(itemDto);
     }
 
